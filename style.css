@@ -1,0 +1,294 @@
+@font-face{
+    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf);
+    font-family: new;
+}
+html{
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    font-family: new;
+    color: white;
+}
+body{
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Hnav{
+    background-color: rgba(128, 128, 128, 0.426);
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+.slide, .slide1 {
+    flex: none;
+    scroll-snap-align: start;
+
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+  .slide1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+.stroka{
+    display: flex;
+    height: 90%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}   
+.stroka>img{
+    margin-left: 50px;
+}
+.textDiv{
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  height: 800px;
+  -webkit-overflow-scrolling: touch; /* для плавной прокрутки на мобильных устройствах */
+}
+.slide>img{
+    width: 100%;
+    height: 100%;
+}
+.slide1>img{
+    width: 200px;
+    height: 100px;
+}
+.slide1>a{
+    width: 100%;
+    height: 10%;
+    color: black;
+    text-decoration: none;
+}
+.slide1>a>p{
+    margin: 0;
+    width: 100%;
+    height: 10%;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.Hul{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Hul>a>li{
+    color: white;
+
+    font-size: 35px;
+}
+.Hul>a{
+    text-decoration: none;
+}
+.title, .title1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin: 20px 0 20px 0;
+    height: 100px;
+}
+.title1{
+    color: black;
+}
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: new;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #ffffff;
+    color: ghostwhite;
+   }
+   
+   button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   
+   button:hover span {
+    color: black;
+   }
+   
+   button::before,
+   button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   button:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+   .aboutUs{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .aboutUs>img{
+    width: 70%;
+    height: 100%;
+   }
+   .text{
+    margin: 150px 150px 0 50px;
+    height: 100%;
+    width: 30%;
+    font-size: 25px;
+   }
+   .ourGames{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+   }
+   .card{
+    height: 450px;
+    width: 300px;
+   }
+   .Cardup>img{
+    border: solid black 5px;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 280px;
+   }
+   .textCard{
+    margin: 0;
+    font: 16px;
+    width: 100%;
+    text-align: center;
+    border: solid black 5px;
+    border-width: 0 5px 0 5px;
+   }
+   .Carddown{
+    width: 100%;
+    border: solid black 5px;
+    border-radius: 0 0 15px 15px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .Carddown>a>input{
+    width: 220px;
+    background-color: #121212;
+    height: 65px;
+    border-radius: 15px;
+    border-width: 0;
+    background-image: url(images/h.png);
+    background-size: 100%;
+    background-position: center;
+   }
+   .textdwn, .textdwn1{
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+   }
+   .textdwn1{
+    color: black;
+   }
+   .partners{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   }
+  
+   footer{
+    background-color: black;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .btns{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .btns>a>input{
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+    border-radius: 40px;
+    border-width: 0;
+    transition: 0.3s;
+    background-size: 100%;
+   }
+   .btns>a>input:hover{
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+    border-width: 0;
+    transition: 0.3s;
+   }
+   #yout{
+    background-image: url(images/youtube.png);
+   }
+   #ds{
+    background-image: url(images/ds.jpg);
+ 
+   }
+   #tg{
+    background-image: url(images/tg.png);
+
+   }
+    #play{
+        background-image: url(images/play.jpg);
+
+    }   
